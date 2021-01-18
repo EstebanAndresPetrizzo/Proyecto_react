@@ -3,9 +3,10 @@ import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
 
-export const GifExpertApp = () => {
+export const GifExpertApp = ({dafaultCategories = [] }) => {
     //const categories = ['PrimerElemento','SegundoElemento','TercerElemento'];//se utiliza si fuera una lista que no cambiara
-    const [categories, setCategories] = useState(['Batman']);
+    //const [categories, setCategories] = useState(['Batman']);
+    const [categories, setCategories] = useState(dafaultCategories);
     
  /*   const handleAdd = () =>{
         //setCategories([...categories,'OtroElemento']);
